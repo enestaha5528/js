@@ -1,0 +1,11 @@
+while (koşul) {
+    // Döngü içinde yapılacak işlemler
+}
+
+Örnek
+	let count = 0;
+	while (count < 5) {
+    		console.log(count);
+    		count++;
+	}
+count 5 olana kadar arttırıyor ve yazdırıyor

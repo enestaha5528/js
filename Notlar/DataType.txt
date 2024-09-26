@@ -1,0 +1,11 @@
+string= Yazı
+number= Numara
+undefined: Bir değişkenin tanımlı olmasına rağmen henüz bir değer atanmamış 
+	   olduğunu ifade eder. Değerin beklenen bir noktada olmadığını gösterir.
+
+null: Bilinçli olarak bir değerin olmadığını ifade eder. Bir değişkenin atanmış
+      olup olmadığını kontrol etmek için kullanılır.
+bigint= Büyük Sayılar
+boolean=true false(1-0)
+
+

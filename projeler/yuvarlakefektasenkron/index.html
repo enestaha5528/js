@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #524f3d;
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+        }
+
+        .daire1 {
+            width: 100vh;
+            height: 100vh;
+            margin-top: 50vh;
+            transition: all 3s;
+            border-radius: 1000px;
+            border: 1px solid transparent;
+            margin-left: -26vh;
+        }
+
+        .daire1.siyahdaire {
+            width: 300vh;
+            padding-bottom: 2vh;
+            height: 300vh;
+            border-color: #000;
+            margin-top: -70vh;
+            background-color: black;
+        }
+
+        .daire2 {
+            width: 100vh;
+            height: 100vh;
+            position: fixed;
+            bottom: -50vh;
+            right: -50vh;
+            transition: all 3s;
+            border-radius: 1000px;
+            border: 1px solid transparent;
+        }
+
+        .daire2.beyazdaire {
+            width: 300vh;
+            height: 300vh;
+            border-color: #ffffff;
+            background-color: rgb(255, 255, 255);
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="daire1"></div>
+    <div class="daire2"></div>
+    <center>
+        <div class="button">
+            <button onclick="siyah()">Siyah</button>
+            <button onclick="beyaz()">Beyaz</button>
+            <button onclick="refreshPage()">Yenile</button>
+        </div>
+    </center>
+    <script>
+        function wait(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        const daire1 = document.querySelector('.daire1');
+        const daire2 = document.querySelector('.daire2');
+
+        async function siyah() {
+            await wait(500);  
+            daire1.style.zIndex = 3;
+            daire2.style.zIndex = 2;
+            daire1.classList.add('siyahdaire');
+            await wait(1000);
+            daire2.classList.remove('beyazdaire');
+            }
+
+        async function beyaz() {
+            await wait(500);
+            daire2.classList.add('beyazdaire');
+            daire2.style.zIndex = 3;
+            daire1.style.zIndex = 2;
+            await wait(1300);
+            daire1.classList.remove('siyahdaire');
+            
+        }
+
+        function refreshPage() {
+            daire2.classList.remove('beyazdaire');
+            daire1.classList.remove('siyahdaire');
+        }
+    </script>
+</body>
+</html>

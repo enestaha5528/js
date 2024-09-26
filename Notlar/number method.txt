@@ -1,0 +1,36 @@
+let x = 123;
+console.log(x.toString()); // "123"
+Bir sayıyı metinsel formata(string) çevirir
+
+-----------------------------------------------------------------------------------------
+let x = 9.656;
+x.toExponential(2);//9.656e+0
+
+toExponential()  sayısını bilimsel gösterimde elde edebilirsin
+-------------------------------------------------------------------------
+let x = 9.656;
+console.log(x.toFixed(0)); // "10"
+Sayıyı en yakın sayıya yuvarlar string olarak ekrana yazdırır
+-------------------------------------------------------------
+toPrecision(precision): Bir sayının belirli bir hassasiyette (toplam basamak sayısı) string temsili.
+
+let num = 123.456;
+console.log(num.toPrecision(4)); // "123.5"
+-----------------------------------------------------------------
+isNaN(): Bir sayının NaN (sayı değil) olup olmadığını kontrol eder.
+
+console.log(isNaN(10)); // false
+console.log(isNaN("Hello")); // true
+----------------------------------------------------------------------
+parseInt(string, radix) ve parseFloat(string): Bir stringi belirtilen tabanda (radix) integer veya ondalık sayıya dönüştürür.
+
+console.log(parseInt("10")); // 10
+console.log(parseFloat("10.5")); // 10.5
+
+----------------------------------------------------------------------------
+isInteger(): Bir sayının tam sayı olup olmadığını kontrol eder.
+
+console.log(Number.isInteger(10)); // true
+console.log(Number.isInteger(10.5)); // false
+----------------------------------------------------------------------------
+

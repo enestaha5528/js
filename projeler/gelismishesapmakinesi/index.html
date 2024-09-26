@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Sayi 1 :</label>
+    <input type="text" name="" id="num1">
+    <br>
+    <label for="">Sayi 2</label>
+    <input type="text" name="" id="num2">
+    <br>
+    <button onclick="topla()">Topla</button>
+    <button onclick="cikar()">Çıkar</button>
+    <button onclick="bol()">Böl</button>
+    <button onclick="carp()">Çarp</button>
+    <p id="sonuc">Sonuç</p>
+
+    <script>
+        function topla(){
+            let num1= parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            let sonuc = num1+num2;
+            document.getElementById('sonuc').innerText= "Sonuç : "+ sonuc;
+        }
+        function cikar(){
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            let sonuc = num1-num2;
+            document.getElementById('sonuc').innerText= 'Sonuç : '+ sonuc;
+        }
+        function bol(){
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);  
+            let sonuc=num1/num2      
+            document.getElementById('sonuc').innerText= 'Sonuç : ' + sonuc;
+        }
+        function carp(){
+            let num1 = parseInt(document.getElementById('num1').value);
+            let num2 = parseInt(document.getElementById('num2').value);
+            let sonuc= num1*num2;
+            document.getElementById('sonuc').innerText= 'Sonuç : '+sonuc;
+        }
+    </script>
+
+</body>
+</html>

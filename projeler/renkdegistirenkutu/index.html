@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renk Değiştiren Kutu</title>
+    <style>
+        #colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox" onmouseover="changeColor()" onmouseout="resetColor()"></div>
+
+    <script>
+        function changeColor() {
+            document.getElementById("colorBox").style.backgroundColor = "red";
+        }
+
+        function resetColor() {
+            document.getElementById("colorBox").style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>

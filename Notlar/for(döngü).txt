@@ -1,0 +1,4 @@
+Döngü Standartı
+for (başlangıç ifadesi; koşul ifadesi; artırma/azaltma ifadesi) {
+    // Döngü içinde yapılacak işlemler
+}

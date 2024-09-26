@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sitecontainer">
+        <div class="banner"></div>
+        <div class="modelbasvuruformbaslik">
+            <p>MODEL BAŞVURU FORMU</p>
+            <div class="yataycizgi"></div>
+        </div>
+        <div class="formalan">
+            <form action="" id="form">
+                <div class="kisiselbilgiler">
+                    <div class="kisiselbilgilerbaslik">
+                        <p>KİŞİSEL BİLGİLER</p>
+                    </div>
+                    <div class="kisiselbilgilerform">
+                        <input type="text" placeholder="Ad Soyad*" >
+                        <input type="email" placeholder="E-posta*" >
+                        <input type="text" id="phone" placeholder="Cep Telefonu Örnek Format (0555 555 55 55)*" >
+                        <input type="date" >
+                        <input type="text" placeholder="İkamet Adresi*" >
+    
+                    </div>
+                </div>
+                <div class="fizikibilgiler">
+                    <div class="fizikibilgilerbaslik">
+                        <p>FİZİKİ BİLGİLER</p>
+                    </div>
+                    <div class="fizikibilgilerform">
+                        <input type="number" id="boy" placeholder="Boy (cm)*" >
+                        <input type="Kilo" id="kilo" placeholder="Kilo*" >
+                        <div class="rowinput">
+                            <input type="number" id="gogus" placeholder="Göğüs (cm)*" >
+                            <input type="number" id="bel" placeholder="Bel (cm)">
+                            <input type="number" id="besen" placeholder="Besen (cm)*" >
+                        </div>
+                        <div class="rowinput">
+                            <input type="number" id="bedenalt" placeholder="Beden Alt (34-36-38)*" >
+                            <input type="text" id="bedenust" placeholder="Beden Üst (XS,S,M,L)">
+                        </div>
+                        <input type="number" id="ayaknumarası" placeholder="Ayak Numarası*" >
+
+                    </div>
+                </div>
+                <div class="aciklama">
+                    <div class="aciklamabaslik">
+                        <p class="aciklamabaslikp">AÇIKLAMA</p>
+                        <p>(isteğe bağlı)</p>
+                    </div>
+                    <input type="text" placeholder="Açıklama">
+                </div>
+            </form>
+            <div class="altalan">
+                <div class="uyari">
+                    <div class="uyaribaslik"><p>ÖNEMLİ UYARI</p></div>
+                    <p>Yüzünüzün ve fiziğinizin belli olduğu fotoğraflar seçemeye özen gösterin.</p>
+                    <p>Bulanık, karanlık, görüntü kalitesi düşük fotoğraflar yüklemeyiniz.</p>
+                    <p>Güneş gözlüklü ve efektli fotoğraflar yüklemeyiniz.</p>
+                    <p>En az 3, en fazla 6 fotoğraf yükleyebilirsiniz.</p>
+                    <a href=""><img src="img/fotograf-ekle.png" alt=""></a>
+                </div>
+                <input type="button" class="gönder" onclick="submitForm()" value="Başvurumu Gönder">
+            </div>
+        </div>
+        <div class="yataycizgi"></div>
+
+    </div>
+    <script>
+        // Maximum length configuration
+        const maxLengths = {
+            'boy': 3,
+            'kilo': 3,
+            'gogus': 3,
+            'bel': 3,
+            'besen': 3,
+            'bedenalt': 2,
+            'bedenust': 3,
+            'ayaknumarası': 2
+        };
+
+        // Apply maxlength to each input
+        Object.entries(maxLengths).forEach(([id, maxLength]) => {
+            const input = document.getElementById(id);
+            if (input) {
+                input.addEventListener('input', () => {
+                    input.value = input.value.slice(0, maxLength);
+                });
+            }
+        });
+
+        function submitForm() {
+            const inputs = document.querySelectorAll('#form input');
+            const values = Array.from(inputs).map(input => input.value);
+            console.log(values);
+        }
+
+        document.getElementById('phone').addEventListener('input', function (e) {
+            const x = e.target.value.replace(/\D/g, '').substring(0, 11); // Only digits
+            const parts = [x.slice(0, 4), x.slice(4, 7), x.slice(7, 9), x.slice(9, 11)];
+            e.target.value = parts.filter(Boolean).join(' ');
+        });
+
+
+    </script>
+</body>
+</html>

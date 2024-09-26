@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bildirim_kutusu {
+            width: 40vh;
+            height: 15vh;
+            background-color: rgb(199, 194, 188);
+            border: 2px solid black;
+            margin-top: -18vh; /* Bildirim kutusunun başlangıç konumu */
+            transition: margin-top 5s; /* Geçiş süresi */
+        }
+
+        .kutuyu_indir {
+            margin-top: 5vh; /* Kutunun indirilmiş konumu */
+        }
+    </style>
+</head>
+<body>
+  
+    <center>
+        <div class="bildirim_kutusu">
+            <p id="bildirim_p"></p>
+        </div>
+        <div class="form">
+            <label for="">Adınızı Giriniz</label> <br>
+            <input type="text" name="" id="ad"><br>
+            <label for="">Soyadınızı Giriniz</label><br>
+            <input type="text" name="" id="soyad"><br>
+            <button onclick="kaydet()">Kaydet</button>
+        </div>
+            
+    </center>
+   <script>
+    function kaydet() {
+        const ad = document.getElementById('ad').value;
+        const soyad = document.getElementById('soyad').value;
+        const bildirim_kutusu = document.querySelector('.bildirim_kutusu');
+        bildirim_kutusu.classList.add('kutuyu_indir');
+        document.getElementById('bildirim_p').innerText = 'Hoşgeldin ' + ad + ' ' + soyad + '. Bu bir bildirim ekranıdır. Kaydınız Yapılmıştır';
+    }
+   </script>
+
+</body>
+</html>

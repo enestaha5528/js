@@ -1,0 +1,16 @@
+var= var ile tanımlanan bir değişken, içinde tanımlandığı işlevin (fonksiyonun)
+ 	kapsamıyla sınırlıdır. Yani bir fonksiyon içinde tanımlanan bir var değişkeni, 
+	sadece o fonksiyon içinde erişilebilir.
+
+let = let ile tanımlanan değişkenler sadece tanımlandıkları blok içinde geçerlidir. değişkenlerin değeri değiştirilebilir.
+const= Değiştirilemez.
+
+Hangi Durumda Hangisini Kullanmalı?
+let: Blok kapsamında tanımlanacak ve değerinin değişebilir olmasını istediğiniz değişkenler için kullanın.
+const: Blok kapsamında tanımlanacak ve değerinin değişmesini istemediğiniz sabit değişkenler için kullanın.
+var: Genellikle modern JavaScript kodunda var kullanmaktan kaçının. Bunun yerine let ve const kullanarak daha
+ güvenli ve okunabilir kod yazabilirsiniz. 
+
+Genel olarak, const kullanmayı tercih edin ve sadece değeri değişebilir bir değişken tanımlamanız gerektiğinde let kullanın. var kullanımı, eski kodlarla çalışırken veya 
+belirli nedenlerle fonksiyon kapsamına ihtiyaç duyduğunuzda kullanılabilir, ancak bu durumlar dışında genellikle
+önerilmez.

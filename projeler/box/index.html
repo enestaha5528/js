@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid #000;
+            transition: all 2s;
+            width: 100px;
+            height: 100px;
+        }
+        .box.buyut{
+            width: 50vh;
+            height: 50vh;
+        }
+        .box.daire{
+            border-radius: 500px;
+        }
+        .box.renk{
+            background-color: black;
+        }
+        .box.ortala{
+            margin-left: 35%;
+            margin-top: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('.box')
+        setTimeout(() => {
+            box.classList.add('buyut')
+            setTimeout(() => {
+                box.classList.add('daire')
+                setTimeout(() => {
+                    box.classList.add('renk')
+                    setTimeout(() => {
+                        box.classList.add('ortala')
+                    }, 500);
+                }, 500);
+            }, 1000);
+        }, 500);
+        setTimeout(() => {
+            function refreshPage() {
+                    location.reload();
+                }
+                refreshPage();
+        }, 5000);
+        
+    </script>
+</body>
+</html>

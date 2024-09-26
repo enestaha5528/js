@@ -1,0 +1,891 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: visibl;
+    
+}
+
+.page1{
+    display: block;
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background: linear-gradient(to right, #000e59, #011cac);
+    width: 98%;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vh;
+}
+
+.headsolalan p {
+    display: inline-flex;
+}
+
+.headsolalan a {
+    color: #ff4800;
+}
+
+.headsolalan {
+    color: white;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 1vh;
+    margin-left: 24vh;
+}
+
+.headsagalan {
+    display: flex;
+    align-items: center; 
+    margin-top: 0; 
+    margin-right: 15vh;
+    color: white;
+}
+
+.kulakliksimge {
+    display: flex;
+    align-items: center;
+}
+
+.headsagalan img {
+    margin-right: 10px;
+}
+
+.number {
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.headerbutton {
+    border-radius: 6px;
+    background: linear-gradient(to top, #e24011, #fec53f);
+    height: 35px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 2vh;
+    transition: 0.5s;
+}
+
+.headerbutton:hover {
+    transform: scale(1.1);
+}
+.navbar {
+    width: 100%;
+    height: 8.5vh;
+    display: flex;
+    background-color: white;
+}
+.e_ticaret{
+    width: 70px;
+    height: 3px;
+    margin-top: 3vh;
+    margin-left: 4.5vh;
+}
+.urunler{
+    width: 70px;
+    height: 3px;
+    margin-top: -0.4vh;
+    margin-left: 16vh;
+}
+.hakkimizda{
+    width: 100px;
+    height: 3px;
+    margin-top: -0.4vh;
+    margin-left: 27vh;
+}
+.referanslar{
+    width: 90px;
+    height: 3px;
+    margin-top: -0.3vh;
+    margin-left: 42vh;
+}
+.fiyatlandirma{
+    width: 100px;
+    height: 3px;
+    margin-top: -0.3vh;
+    margin-left: 55.9vh;
+}
+.partnerolun{
+    width: 100px;
+    height: 3px;
+    margin-top: -0.5vh;
+    margin-left: 71.3vh;
+}
+
+.logo {
+    margin-left: 23vh;
+    margin-top: -3vh;
+}
+.linkler{
+    margin-left: 60vh;
+    margin-top: 30px;
+}
+.linkler a{
+    margin-left: 5vh;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+.icerik{
+    width: 100%;
+    margin-top: 20vh;
+    height: 100vh;
+}
+.iceriksolalan{
+    font-size: x-large;
+    color: white;
+    margin-left: 25vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25vh;
+}
+.iceriksagalan{
+    float: right;
+    margin-right: 20vh;
+    margin-top:-50vh;
+}
+.butonlar button{
+    border-radius: 60px;
+    background-color: #1356f4;
+    height: 60px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 2vh;
+    margin-top: 35vh;
+}
+.butonlar button:hover{
+    background: linear-gradient(to bottom, #00189e, #0026ff);
+}
+.uzmanla_tanis{
+    width: 230px !important;
+}
+.buyukdusunur{
+    font-size: 20px;
+    margin-top: -3vh;
+    position: absolute;
+}
+.buyukyazilim{
+    font-size: 75px;
+    position: absolute;
+    margin-top: 1vh;
+    font-weight: 350;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.hakediyor{
+    margin-top: 10vh;
+    position: absolute;
+    font-size: 70px;
+}
+.peticaret{
+    position: absolute;
+    margin-top: 25vh;
+    font-size: large;
+
+}
+
+.page2{
+    display: block;
+    width: 100%;
+    height: 100rem;
+    background-color: rgb(224, 224, 224);
+}
+.row1{
+    position: absolute;
+    margin-top: 7rem;
+    width: 100%;
+    height: 100px;
+
+}
+.row1 .col1{
+    font-weight: 700;
+    margin-left: 25%;
+    font-size: 35px;
+    color: #000e59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row2{
+    position: absolute;
+    margin-top: 30rem;
+    width: 100%;
+    height: 400px;
+   
+}
+.row2 .col1{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px; 
+    display:inline-block; 
+    margin-top: -30vh !important;
+}
+.row2 .col2{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px; 
+    display:inline-block; 
+}
+.row2 .col3{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px;
+    display:inline-block;  
+}
+.row2col{
+    transition: 0.5s !important;
+    margin-left: 70px;
+    width: 24% !important;
+    border-radius: 20px;
+
+}
+.row2cols{
+    margin-left: 10%;
+    color: #000e59;
+}
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card img{
+    margin-top: 10%;
+}
+.card .cardimg{
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: #000e59;
+    width: 80%;
+    height: 200px;
+}
+.card1{
+    margin-bottom: 50%;
+}
+.row3{
+    position: absolute;
+    margin-top: 65rem;
+    width: 100%;
+    height: 400px;
+    display:inline-block; 
+
+}
+
+.row3 .col1{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px; 
+    display:inline-block; 
+    margin-top: -30vh !important;
+}
+.row3 .col2{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px; 
+    display:inline-block; 
+}
+.row3 .col3{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    height: 400px;
+    display:inline-block;  
+}
+.row3col{
+    transition: 0.5s;
+    margin-left: 70px;
+    width: 24% !important;
+    border-radius: 20px;
+
+}
+.row3cols{
+    margin-left: 10%;
+    color: #000e59;
+}
+.card5{
+    margin-top: -1.5rem;
+}
+
+.page3{
+    width: 100%;
+    height: 100vh;
+}
+.page3row1{
+    margin-top: 7vh;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+
+}
+.page3col1{
+    width: 75%;
+    height: 10vh;
+    justify-content: space-between;
+
+}
+.page3col1text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 70vh;
+    color: #011cac;
+}
+.page3col1text h2{
+    margin-left: 17vh;
+    font-size: 30px;
+}
+.page3col1text p{
+    margin-top: -2vh;
+}
+.page3col2{
+    width: 25%;
+    height: 10vh;
+    justify-content: space-between;
+
+}
+.page3col2button1{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 30vh;
+}
+.page3col2button2{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: -35px;
+    margin-left: 10vh;
+}
+
+.page3col3text{
+    position: absolute;
+    margin-left: 15vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin-top: 30vh;
+}
+.page3col3{
+    justify-content: space-between;
+
+}
+.page3col4{
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 25vh;
+    margin-left: 100vh;
+}
+
+.customerinfo {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 40%; 
+    margin-left: -7vh;
+    margin-top: 20px; 
+}
+
+.customerinfo .customerinfo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px; 
+}
+
+.customer_info_circular {
+    border: 3px solid #000e59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-bottom: 10px; 
+}
+body > div > div.page3 > div.page3row2 > div.page3col3 > div > p:nth-child(2){
+    width: 40%;
+}
+.row2col:hover , .row3col:hover{
+    transform: scale(1.1); 
+}
+.iceriksagalan img{
+    transition: 0.5s;
+}
+.iceriksagalan img:hover{
+    transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 480px) and (max-height: 570px) {
+    body{
+        overflow-x: hidden;
+        }
+
+    .butonlar{
+        margin-top: 50vh;
+        margin-left: 2vh !important;
+        width: 20vh;
+    }
+    
+    .butonlar button {
+        border-radius: 60px;
+        background-color: #1356f4;
+        height: 60px;
+        width: 150px;
+        border: none;
+        color: white;
+        font-size: 17px;
+        margin-left: -0vh;
+        margin-top: 50vh;
+    }
+    .iceriksolalan .peticaret{
+        width: 70vh !important;
+        margin-top: 70vh;
+    }
+    .iceriksolalan .hakediyor {
+        margin-left: -2vh;
+        margin-top: 35vh !important;
+    }
+    .page2{
+        height: 500vh !important;
+    }
+    .row2 {
+        margin-top: 90vh !important;
+        flex-direction: column;
+        float: left;
+    }
+    .row2col{
+        margin-top: 50vh !important;
+        flex-direction: column !important;
+    }
+    .row3col{
+        flex-direction: column !important;
+        height: 600px;
+        margin-top: 10VH;
+    }
+    .cardimg{
+        width: 90% !important;
+        height: 40% !important;
+    }
+    .cardimg img{
+        width: 100px;
+    }
+    .card{
+        margin-top: 2vh !important;
+    }
+    .row2cols{
+        margin-top: 20vh;
+    }
+    .row2 .col2 {
+        background-color: rgb(255, 255, 255);
+        width: 20%;
+        height: 400px;
+        flex-direction: column !important;
+    }
+    .row2 .col3 {
+        background-color: rgb(255, 255, 255);
+        width: 20%;
+        height: 400px;
+        flex-direction: column !important;
+    }
+    .row3{
+        margin-top: 280vh;
+        height: 800px !important;
+    }
+    .card{
+        width: 100% !important;
+        margin-top: -30px;
+    } 
+    .row2col {
+        position: absolute;
+        margin-top: 50vh !important;
+        margin-left: 70px;
+        width: 70% !important;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+   
+    .row3col .col3{
+        margin-top: 200vh !important;
+    }
+    .page3col2{
+        margin-left: -3vh;
+
+    }
+    .page3col1{
+        margin-left: -70vh;
+        width: 100vh;
+    }
+    .page3col1 .page3col1text{
+        width: 90vh;
+    } 
+    .page3col1 .page3col1text p{
+        margin-left: 5vh;
+    }
+    .page3col2{
+        margin-top: -40vh;
+        margin-left: 15vh;    
+}
+    .page3col1{
+        margin-top: -40vh;
+    }
+    .page3col3text{
+        margin-top: 50vh;
+    }
+    .page3col4{
+        margin-left: 10vh;
+        margin-top: -15vh;
+    }
+    .page3col4 img{
+        width: 100%;
+    }
+    .page3col1text{
+        margin-top: -0vh !important;
+    }
+    .page2 .row1 .col1 p{
+        position: absolute;
+        width: 90% !important;
+        margin-left: -20vh !important;
+    }
+    
+}
+/*Mobil Responsive*/
+@media only screen and (max-width: 480px) and (max-height : 880px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body > div > div.page3 > div.page3row2 > div.page3col3 > div > p:nth-child(2){
+        width: 100%;
+    }
+    .page2{
+        height: 370vh !important;
+    }
+    .row2 {
+        margin-top: 70vh !important;
+        flex-direction: column;
+        float: left;
+    }
+    .row2col{
+        margin-top: 10vh !important;
+        flex-direction: column !important;
+    }
+    .row3col{
+        flex-direction: column !important;
+        height: 600px;
+        margin-top: 10VH;
+    }
+    .cardimg{
+        width: 90% !important;
+        height: 40% !important;
+    }
+    .cardimg img{
+        width: 100px;
+    }
+    .card{
+        margin-top: 2vh !important;
+    }
+    .row2cols{
+        margin-top: 20vh;
+    }
+    .row2 .col2 {
+        background-color: rgb(255, 255, 255);
+        width: 20%;
+        height: 400px;
+        flex-direction: column !important;
+    }
+    .row2 .col3 {
+        background-color: rgb(255, 255, 255);
+        width: 20%;
+        height: 400px;
+        flex-direction: column !important;
+    }
+    .row3{
+        margin-top: 190vh;
+        height: 800px !important;
+    }
+    .card{
+        width: 100% !important;
+        margin-top: -30px;
+    }
+    
+    
+    .row2col {
+        position: absolute;
+        margin-top: 20vh !important;
+        margin-left: 70px;
+        width: 70% !important;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+   
+    .row3col .col3{
+        margin-top: 200vh !important;
+    }
+    .container{
+        width: 100%;
+    }
+    .header{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .icerik{
+        margin-top: -10vh;
+    }
+    .iceriksagalan{
+        display: none;
+    }
+    .iceriksolalan{
+        height: 50vh;
+        position: absolute;
+        margin-top: 10vh;
+        margin-left: 3vh;
+        width: 90%;
+    }
+    .hakediyor h1{
+        position: absolute;
+        margin-top: 50vh;
+    }
+    .page1{
+        height: 110vh;
+        width: 100%;
+    }
+     .butonlar{
+        margin-top: 30vh;
+        margin-left: -5vh;
+        width: 100%;
+    }
+    .iceriksolalan p{
+        margin-top: 50vh;
+        margin-left: -10px;
+    }
+    .iceriksolalan .buyukdusunur{
+        margin-top: 14vh;
+    }
+    .iceriksolalan .buyukyazilim{
+        margin-top: 17vh;
+        margin-left: -3vh;
+        width: 40vh;
+        height: 100px;
+    }
+    .iceriksolalan .hakediyor{
+        margin-left: -2vh;
+        margin-top: 37vh;
+    }
+    .iceriksolalan .peticaret{
+        width: 45vh;
+    }
+    .paga2{
+        height: 370vh;
+    }
+    .page2 .row1 .col1 p{
+        width: 110%;
+        margin-left: -10vh;
+        margin-top: -10vh;
+    }
+    .page3{
+        margin-top: 100vh;
+    }
+    .row2{
+        margin-top: 60vh;
+        flex-direction: column;
+        float: left;
+
+    }
+    .row3{
+        flex-direction: column;
+
+    }
+    .row2col {
+        margin-top: 10vh;
+        margin-left: 70px;
+        width: 50% !important;
+        border-radius: 20px;
+
+    }
+   
+    .row2cols{
+        width: 100%;
+        display: flex;
+    }
+    .row3col {
+        margin-left: 70px;
+        width: 50% !important;
+        border-radius: 20px;
+        justify-content: space-between;
+
+    }
+    .row3cols{
+        display: flex;
+        flex-direction: column;
+    }
+    .body > div > div.page2 > div.row2 > div > div.row2col.col1{
+        width: 100px;
+    }
+    .row2col .col1{
+        flex-direction: column;
+    }
+    .row2col .col2{
+        flex-direction: column;
+    }
+    .row2col .col3{
+        flex-direction: column;
+    }
+    .row2col .col4{
+        flex-direction: column;
+    }
+    .card{
+        width: 20vh;
+    }
+    .row2col{
+        width: 30vh;
+    }
+    .row3col .col3{
+        margin-top: 200vh !important;
+    }
+    .page3col2{
+        margin-left: -50vh;
+
+    }
+    .page3col1{
+        margin-left: -70vh;
+        width: 100vh;
+    }
+    .page3col1 .page3col1text{
+        width: 50vh;
+    } 
+    body > div > div.page3 > div.page3row1 > div.page3col1 > div > h2{
+        margin-left: 5vh !important;
+        width: 50vh;
+    }
+    .page3col1 .page3col1text p{
+        margin-left: 5vh;
+        margin-top: 10px;
+    }
+    .page3col2{
+        margin-top: -80vh;
+        margin-left: -19vh;  
+}
+    .page3col1{
+        margin-top: -40vh;
+    }
+    .page3col3text{
+        margin-top: -15vh;
+        margin-left: 1vh;
+        width: 90%;
+    }
+    .page3col4{
+        margin-left: 1vh;
+        width: 90%;
+        margin-top: -60vh;
+    }
+    .page3col4 img{
+        width: 100%;
+    }
+    .page3col1text{
+        margin-top: -60vh !important;
+    }
+    body > div > div.page1 > div.icerik > div.iceriksolalan > h1 > b{
+        width: 100px;
+    }
+    .customerinfo{
+        margin-left: 0vh;
+        width: 50%;
+    }
+    body > div > div.page1 > div.icerik > div.iceriksolalan > h1{
+        font-size: 50px;
+    }
+   
+}   
+/*Laptop Responsive*/
+@media only screen and (max-width: 1376px) and (max-height: 778px) {
+    .logo img {
+        position: absolute;
+        margin-top: -1.5vh;
+    }
+    .iceriksagalan img{
+        width: 500px;
+    }
+    .page3col4 img{
+        width: 700px;
+        margin-top: 10vh
+    }
+    .linkler{
+        margin-top: 13px;
+    }
+    .urunler{
+        margin-left: 125px;
+    }
+    .hakkimizda{
+        margin-left: 215px;
+    }
+    .referanslar{
+        margin-left: 340px;
+        margin-top: -4px;
+        
+    }
+    .fiyatlandirma{
+        margin-left: 470px;
+        margin-top: -3px;
+
+    }
+    .partnerolun{
+        margin-left: 600px;
+    }
+    .linkhover{
+        margin-top: -1px;
+    }
+    .page3col1 .page3col1text p{
+        margin-left: 5vh;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .page3col1text{
+        margin-top: 5vh;
+        margin-left: 270px;
+        width: 100%;
+    }
+    .buyukdusunur{
+        margin-top: -15vh;
+    }
+    .buyukyazilim{
+        margin-top: -10vh;
+    }
+    .hakediyor{
+        margin-top: 1vh;
+    }
+    .peticaret{
+        margin-top: 18vh;
+    }
+    .row1 .col1 p{
+        width: 100%;
+        margin-left: -30vh;
+    }
+    .customer_info_circular2{
+        margin-top: 20px;
+    }
+    body > div > div.page2 > div.row3 > div > div.row3col.col2 > div > div > center > div > img{
+        width: 200px;
+    }
+    .row3 .col2 {
+        margin-top: -50vh !important;
+    }
+    .row3col , .row2col{
+        height: 500px !important;
+        width: 25% !important;
+
+    }
+
+}
+    

@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.banner{
+    width: 100%;
+    height: 35vh;
+    background-image: url(img/model-basvuru-formu-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modelbasvuruformbaslik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    line-height: 0px;
+}
+.yataycizgi{
+    width: 100%;
+    height: 1px;
+    background-color: red;
+}
+.kisiselbilgiler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d8d6d6;
+    font-size: 16px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin-top: 5%;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+.formalan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.kisiselbilgilerform{
+    width: 100%;
+    
+    margin-top: 1vh;
+}
+body > div > div.formalan > form > div.fizikibilgiler > div.fizikibilgilerform > div:nth-child(4) input{
+    width: 47%;
+}
+.fizikibilgilerbaslik{
+    font-size: xx-large;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aciklamabaslikp{
+    font-size: xx-large
+}
+.aciklamabaslik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    line-height: 0px;
+}
+.rowinput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fizikibilgiler{
+    width: 100%;
+}
+.altalan{
+    width: 35%;
+}
+.aciklama{
+    width: 100%;
+}
+.rowinput input{
+    width: 30%;
+}
+.uyaribaslik{
+    font-size: xx-large;
+}
+.uyari{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    line-height: 0px;
+
+}
+.gönder{
+    width: 100%;
+    background-color: rgb(165, 0, 0);
+    color: white;
+
+}

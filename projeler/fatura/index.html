@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); validateMyForm();">
+        <p>Adınızı Giriniz</p>
+        <input type="text" name="" id="ad">
+        <p>Soyadınızı Giriniz</p>
+        <input type="text" name="" id="soyad">
+        <p>Telefon Numaranızı Giriniz</p>
+        <input type="number" id="tel"> <br>
+        <button type="submit" onclick="bilgi()">Kaydet</button>
+    </form>
+    <hr>
+    <hr>
+    <p id="yazilcakad"></p>
+    <p id="yazilcaksoyad"></p>
+    <p id="yazilcaktel"></p>
+    <script>
+        function bilgi(){
+            var ad=document.getElementById('ad').value;
+            var soyad=document.getElementById('soyad').value;
+            var tel=document.getElementById('tel').value;
+            document.getElementById("yazilcakad").textContent = ad;
+            document.getElementById("yazilcaksoyad").textContent = soyad;
+            document.getElementById("yazilcaktel").textContent = tel;
+        }
+
+    </script>
+</body>
+</html>

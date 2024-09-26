@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #212018;
+        }
+
+        .button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 3;
+        }
+        .daire {
+            width: 10vh;
+            height: 10vh;
+            position: fixed;
+            left: 45%; 
+            top: 40%;
+            transition: all 10s;
+            border-radius: 1000px;
+            border: 5px solid transparent;
+            z-index: 2;
+        }
+        .buyut {
+            width: 300vh !important;
+            height: 300vh !important;
+            border-color: #ffffff;
+            transform: translate(-50%, -50%) scale(30);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <center>
+            <div class="button">
+                <button onclick="buyut()">Click</button>
+            </div>
+            <div class="daire"></div>
+        </center>
+    </div>
+   <script>
+        function buyut() {
+            const daire = document.querySelector('.daire');
+            daire.classList.add('buyut');
+        }
+   </script>
+</body>
+</html>
